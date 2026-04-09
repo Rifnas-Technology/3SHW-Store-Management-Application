@@ -47,7 +47,7 @@ graph TD
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/store-application.git
+   git clone https://github.com/Rifnas-Technology/store-application.git
    ```
 
 2. **Configure Google Sheets**:
