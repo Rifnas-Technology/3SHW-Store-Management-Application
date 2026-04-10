@@ -8,7 +8,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  final TextEditingController _usernameController = TextEditingController(text: 'SSS-Hardware');
+  final TextEditingController _usernameController = TextEditingController(text: 'username');
   final TextEditingController _passwordController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
 
@@ -18,8 +18,8 @@ class _LoginPageState extends State<LoginPage> {
 
   void _login() {
     if (_formKey.currentState!.validate()) {
-      if (_usernameController.text.toLowerCase() == 'sss-hardware' && 
-          _passwordController.text.toLowerCase() == 'abcd1234') {
+      if (_usernameController.text.toLowerCase() == 'username' && 
+          _passwordController.text.toLowerCase() == 'password') {
         Navigator.pushReplacementNamed(context, '/home');
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
